@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+body{
+    font: 400 15px 'Roboto';
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* contato-header */
+header section{background: #DD9933;}
+header section article{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+header p{color: rgb(255, 255, 255);}
