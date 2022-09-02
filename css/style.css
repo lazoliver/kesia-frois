@@ -5,18 +5,53 @@
     padding: 0
 }
 body{
+    background: #000;
+    color: #ffffff;
     font: 400 15px 'Roboto';
 }
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .container{
     max-width: 1180px;
     margin: 0 auto;
 }
+/* display-flex */
+.d-flex{display: flex;}
 
 /* contato-header */
-header section{background: #DD9933;}
+header section:first-child{background: #DD9933;}
 header section article{
-    display: flex;
     gap: 20px;
     padding: 10px 0;
 }
 header p{color: rgb(255, 255, 255);}
+
+/* menu */
+header section:last-child{
+    justify-content: space-between;
+    padding: 40px 0
+}
+h1{letter-spacing: 2px;}
+nav ul{position: relative;}
+.d-flex li > a{
+    padding: 30px 10px;
+}
+.d-flex li > a:hover{
+    color: #DD9933;
+}
+.dropdown{
+    background: #fff;
+    left: 160px;
+    position: absolute;
+    top: 50px;
+}
+.dropdown li a{
+    color: rgb(22, 22, 22);
+    display: block;
+    padding: 10px 25px 10px 10px;
+}
+.dropdown li a:hover{color: rgb(22, 22, 22);}
+.dropdown li:hover{background: #ccc;}
