@@ -7,19 +7,36 @@
 body{
     background: #000;
     color: #ffffff;
-    font: 400 15px 'Roboto';
+    font: 400 15px 'Oxygen';
 }
 a{
     color: #ffffff;
     text-decoration: none;
 }
 
+/* container */
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* display-flex */
 .d-flex{display: flex;}
+
+/* header */
+header{
+    position: relative;
+    z-index: 99;
+}
+figure img{
+    background: #000;
+    opacity: 0.6;
+    position: fixed;
+    top: 0px;
+    max-width: 100%;
+    width: 100vw;
+    z-index: -1;
+}
 
 /* contato-header */
 header section:first-child{background: #DD9933;}
@@ -28,7 +45,6 @@ header section article{
     padding: 10px 0;
 }
 header p{color: rgb(255, 255, 255);}
-
 /* menu */
 header section:last-child{
     justify-content: space-between;
@@ -57,3 +73,24 @@ ul li:nth-child(3):hover .dropdown{display: block;}
 }
 .dropdown li a:hover{color: rgb(22, 22, 22);}
 .dropdown li:hover{background: #ccc;}
+main section{
+    text-align: center;
+    z-index: 99;
+}
+main p{
+    font-size: 19px;
+    margin: 10px 0 35px;
+}
+h2{
+    font: 900 90px/100px 'Oswald';
+    margin-bottom: 90px;
+}
+span{
+    display: block;
+    font-weight: 400;
+}
+main section a{
+    background: #DBAF76;
+    border-radius: 6px;
+    padding: 15px 40px;
+}
