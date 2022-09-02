@@ -16,12 +16,15 @@ a{
 
 /* container */
 .container{
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 /* display-flex */
-.d-flex{display: flex;}
+.d-flex{
+    align-items: center;
+    display: flex;
+}
 
 /* header */
 header{
@@ -30,11 +33,10 @@ header{
 }
 figure img{
     background: #000;
-    opacity: 0.6;
+    opacity: 0.4;
     position: fixed;
     top: 0px;
-    max-width: 100%;
-    width: 100vw;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -48,7 +50,7 @@ header p{color: rgb(255, 255, 255);}
 /* menu */
 header section:last-child{
     justify-content: space-between;
-    padding: 40px 0
+    margin: 40px auto
 }
 h1{letter-spacing: 2px;}
 nav ul{position: relative;}
@@ -56,7 +58,10 @@ nav ul{position: relative;}
     padding: 30px 15px;
 }
 .d-flex li > a:hover{
-    color: #DD9933;
+    color: #FFD500;
+}
+nav{
+    vertical-align: middle;
 }
 .dropdown{
     background: #fff;
@@ -83,6 +88,7 @@ main p{
 }
 h2{
     font: 900 90px/100px 'Oswald';
+    letter-spacing: 4px;
     margin-bottom: 90px;
 }
 span{
@@ -93,4 +99,50 @@ main section a{
     background: #DBAF76;
     border-radius: 6px;
     padding: 15px 40px;
+}
+#menu{display: none;}
+@media screen and (max-width: 1024px){
+    html{overflow: hidden;}
+    #menu{
+        display: block;
+        padding: 20px;
+    }
+    h1{width: 65%;}
+    header section article{
+        justify-content: space-between;
+    }
+    /* nav{display: none;} */
+    nav{
+        background: #fff;
+        display: flex;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        top: 160px;
+        width: 100vw;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .d-flex li > a{
+        color: #000;
+        display: block;
+        padding-left: 50px;
+        width: 100vw;
+    }
+    .dropdown{
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    ul li:nth-child(3):hover .dropdown, nav{display: none;}
+    .dropdown li a{padding-left: 70px;}
+    h2{
+        font: 900 45px/50px 'Oswald';
+        letter-spacing: 4px;
+        margin-bottom: 90px;
+    }
+    figure img{
+        transform: translate(-30%, 0);
+    }
 }
