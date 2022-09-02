@@ -118,7 +118,7 @@ main section a{
         left: 0px;
         right: 0px;
         position: absolute;
-        top: 160px;
+        top: 120%;
         width: 100vw;
     }
     nav ul{
