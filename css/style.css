@@ -110,9 +110,6 @@ main section a{
 }
 @media screen and (max-width: 680px){
     html{overflow: hidden;}
-    .container{
-        padding: 10px 15px;
-    }
     #menu{
         display: block;
         padding: 20px;
@@ -152,7 +149,7 @@ main section a{
         margin-bottom: 90px;
     }
     figure img{
-        transform: translate(-15%, 0%);
+        transform: translate(-35%, 0%);
         height: 100vh;
         width: auto;
     }

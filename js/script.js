@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $("#menu").click(function(){
+        $(".dropdown").hide();
         $("nav").toggle("slow");
     });
     $("#services").click(function(){
