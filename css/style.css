@@ -44,10 +44,12 @@ nav ul{position: relative;}
 }
 .dropdown{
     background: #fff;
+    display: none;
     left: 160px;
     position: absolute;
     top: 50px;
 }
+ul li:nth-child(3):hover .dropdown{display: block;}
 .dropdown li a{
     color: rgb(22, 22, 22);
     display: block;
