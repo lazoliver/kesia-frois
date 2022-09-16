@@ -47,6 +47,19 @@ header section article{
     padding: 10px 0;
 }
 header p{color: rgb(255, 255, 255);}
+svg{
+    height: 25px;
+    width: 25px;
+}
+.st0{
+    fill: none;
+    stroke: rgb(255, 255, 255);
+}
+header a, header article p:last-child{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
 /* menu */
 header section:last-child{
     justify-content: space-between;
